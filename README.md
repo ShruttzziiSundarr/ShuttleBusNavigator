@@ -94,12 +94,4 @@ The system uses a MySQL database to store essential information such as bus sche
     );
     ```
 
-## Functions
 
-### Bus Details Management
-
-- **Add Bus Details:**
-  ```python
-  def bus_details_add(cursor, bus_number, driver_name, route, timings):
-      query = "INSERT INTO bus_details (bus_number, driver_name, route, timings) VALUES (%s, %s, %s, %s)"
-      cursor.execute(query, (bus_number, driver_name, route, timings))
